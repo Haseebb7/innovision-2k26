@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production builds
+dist/
+**/dist/
+build/
+**/build/
+
+# Local env files / Secrets
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+**/.env*
+
+# Logs and databases
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE / System metadata
+.gemini/
+.system_generated/
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Uploads directory inside backend
+backend/uploads/
