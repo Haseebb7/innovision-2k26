@@ -17,7 +17,7 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-cyber-neonPurple/10 rounded-full blur-3xl -z-10"></div>
 
         <span className="text-[10px] text-cyber-neonBlue uppercase tracking-[0.25em] font-mono px-3 py-1 rounded-full bg-cyber-neonBlue/10 border border-cyber-neonBlue/20">
-          National Level Symposium
+          International Level Symposium
         </span>
 
         <h1 className="font-display font-black text-4xl leading-tight tracking-tight uppercase">
@@ -25,7 +25,7 @@ const Home = () => {
         </h1>
 
         <p className="text-xs text-gray-300 max-w-xs leading-relaxed">
-          The ultimate arena for innovators, creators, and technologists. Unleash the power of Artificial Intelligence &amp; Cyber Security.
+          The ultimate arena for innovators, creators, and technologists.
         </p>
 
         {/* Date & Location */}
@@ -34,14 +34,14 @@ const Home = () => {
             <Calendar className="text-cyber-neonBlue" size={16} />
             <div>
               <p className="text-[10px] text-gray-400 font-mono">DATE</p>
-              <p className="text-xs font-semibold">March 12, 2026</p>
+              <p className="text-xs font-semibold">23rd &amp; 25th July 2026</p>
             </div>
           </div>
           <div className="flex items-center space-x-2 bg-white/5 border border-white/10 rounded-xl p-3 text-left">
             <MapPin className="text-cyber-neonPurple" size={16} />
             <div>
               <p className="text-[10px] text-gray-400 font-mono">VENUE</p>
-              <p className="text-xs font-semibold truncate">ICET Campus</p>
+              <p className="text-xs font-semibold truncate">Auditorium, ICET</p>
             </div>
           </div>
         </div>
@@ -112,20 +112,20 @@ const Home = () => {
         <div className="absolute top-0 right-0 p-3 opacity-10">
           <Cpu size={80} className="text-white" />
         </div>
-        
+
         <h2 className="font-display font-extrabold text-base tracking-wide flex items-center space-x-2">
           <ShieldCheck className="text-cyber-neonBlue" size={18} />
           <span>Department of AI &amp; CC</span>
         </h2>
-        
+
         <p className="text-xs text-gray-300 leading-relaxed">
-          The Department of **Artificial Intelligence and Cyber Security (AI&amp;CC)** at **Ilahia College of Engineering and Technology (ICET)** stands at the forefront of modern engineering education.
+          The Department of <strong>Artificial Intelligence and Cyber Security (AI&amp;CC)</strong> at <strong>Ilahia College of Engineering and Technology (ICET)</strong> stands at the forefront of modern engineering education.
         </p>
         <p className="text-xs text-gray-400 leading-relaxed font-light">
-          We empower students to solve real-world problems in machine learning, computer vision, data analysis, ethical hacking, and network forensics through practical workshops, lab exposure, and national-level technology expos like Innovision.
+          We empower students to solve real-world problems in machine learning, computer vision, data analysis, ethical hacking, and network forensics through practical workshops, lab exposure, and international-level technology expos like Innovision.
         </p>
       </motion.div>
-      
+
       {/* Mini Stats Grid */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
@@ -134,7 +134,7 @@ const Home = () => {
         className="glass-panel rounded-2xl p-4 grid grid-cols-3 gap-2 text-center"
       >
         <div>
-          <h4 className="text-xl font-bold font-display text-cyber-neonBlue">50k+</h4>
+          <h4 className="text-xl font-bold font-display text-cyber-neonBlue">10k+</h4>
           <p className="text-[8px] text-gray-400 font-mono uppercase tracking-wider">Prize Pool</p>
         </div>
         <div className="border-x border-white/10">
@@ -142,7 +142,7 @@ const Home = () => {
           <p className="text-[8px] text-gray-400 font-mono uppercase tracking-wider">Major Events</p>
         </div>
         <div>
-          <h4 className="text-xl font-bold font-display text-pink-500">100+</h4>
+          <h4 className="text-xl font-bold font-display text-pink-500">50+</h4>
           <p className="text-[8px] text-gray-400 font-mono uppercase tracking-wider">Teams</p>
         </div>
       </motion.div>

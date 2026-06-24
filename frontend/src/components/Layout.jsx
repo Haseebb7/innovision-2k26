@@ -1,6 +1,5 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { ShieldAlert, LogIn, Lock } from 'lucide-react';
 import BottomNav from './BottomNav';
 
 const Layout = () => {
@@ -37,13 +36,6 @@ const Layout = () => {
               <span className="text-[10px] text-cyber-neonPurple font-bold px-2.5 py-0.5 rounded-full bg-cyber-neonPurple/10 border border-cyber-neonPurple/20 uppercase">
                 ICET
               </span>
-              <Link 
-                to="/admin/login" 
-                title="Admin Panel"
-                className="p-2 rounded-lg bg-cyber-darkBlue hover:bg-cyber-neonBlue/10 hover:text-cyber-neonBlue border border-cyber-border transition-all duration-300"
-              >
-                <Lock size={14} className="text-gray-400" />
-              </Link>
             </div>
           </header>
         )}

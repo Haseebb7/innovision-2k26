@@ -8,11 +8,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is Innovision '26?",
-      answer: "Innovision '26 is a National Level Symposium conducted by the Department of Artificial Intelligence and Cyber Security (AI&CC) at Ilahia College of Engineering and Technology (ICET). It features a Project Exhibition and a Paper Presentation conference."
+      answer: "Innovision '26 is an International Level Symposium conducted by the Department of Artificial Intelligence and Cyber Security (AI&CC) at Ilahia College of Engineering and Technology (ICET). It features a Project Exhibition and a Paper Presentation conference."
     },
     {
       question: "Who can participate?",
-      answer: "Students pursuing B.Tech, M.Tech, MCA, or other computer science/engineering degrees from any recognized college across India can participate."
+      answer: "Students pursuing B.Tech, M.Tech, MCA, or other computer science/engineering degrees from any recognized college internationally, via online also, can participate."
     },
     {
       question: "How many members are allowed in a Project Exhibition team?",
@@ -24,7 +24,7 @@ const FAQ = () => {
     },
     {
       question: "Are KTU Activity Points available?",
-      answer: "Yes, participation and winning certificates are recognized for KTU (APJ Abdul Kalam Technological University) activity points under national-level events."
+      answer: "Yes, participation and winning certificates are recognized for KTU (APJ Abdul Kalam Technological University) activity points under international-level events."
     },
     {
       question: "Can we register for both events?",

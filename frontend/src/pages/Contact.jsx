@@ -6,9 +6,28 @@ const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [query, setQuery] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (query.name && query.email && query.message) {
+      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdhUAq5FFAqDnlQu6kuEcEYVRMY1GHu9LdPGuN3-X35_1tf6A/formResponse";
+      const formData = new URLSearchParams();
+      formData.append("entry.84533175", query.name);
+      formData.append("entry.547299708", query.email);
+      formData.append("entry.536566578", query.message);
+
+      try {
+        await fetch(formUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: formData.toString(),
+        });
+      } catch (error) {
+        console.error("Error submitting query:", error);
+      }
+
       setFormSubmitted(true);
       setQuery({ name: '', email: '', message: '' });
     }
@@ -36,19 +55,19 @@ const Contact = () => {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-1">
               <p className="text-[10px] text-purple-400 font-bold font-mono">STAFF COORDINATOR</p>
-              <p className="text-xs font-semibold">Prof. Shameer M.</p>
-              <a href="tel:+919876543210" className="text-[11px] text-gray-300 flex items-center space-x-1 hover:text-cyber-neonBlue transition-colors duration-200">
+              <p className="text-xs font-semibold">Prof. Nejma</p>
+              <a href="tel:+919744254161" className="text-[11px] text-gray-300 flex items-center space-x-1 hover:text-cyber-neonBlue transition-colors duration-200">
                 <Phone size={10} />
-                <span>+91 98765 43210</span>
+                <span>+91 97442 54161</span>
               </a>
             </div>
             
             <div className="space-y-1">
               <p className="text-[10px] text-purple-400 font-bold font-mono">STUDENT COORDINATOR</p>
-              <p className="text-xs font-semibold">Anandhu S.</p>
-              <a href="tel:+918765432109" className="text-[11px] text-gray-300 flex items-center space-x-1 hover:text-cyber-neonBlue transition-colors duration-200">
+              <p className="text-xs font-semibold">Haseeb</p>
+              <a href="tel:+917306819560" className="text-[11px] text-gray-300 flex items-center space-x-1 hover:text-cyber-neonBlue transition-colors duration-200">
                 <Phone size={10} />
-                <span>+91 87654 32109</span>
+                <span>+91 73068 19560</span>
               </a>
             </div>
           </div>
