@@ -80,7 +80,7 @@ const ProjectsInfo = () => {
           href={GOOGLE_FORMS.PROJECTS}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full py-3 rounded-xl bg-gradient-to-r from-cyber-neonBlue to-cyber-neonPurple text-cyber-bg font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center"
+          className="w-full py-3 rounded-xl bg-cyber-neonBlue text-cyber-bg font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center"
         >
           <span>Apply Now</span>
           <ChevronRight size={16} />

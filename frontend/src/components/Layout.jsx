@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import BottomNav from './BottomNav';
+import logo from '../assets/logo.png';
 
 const Layout = () => {
   const location = useLocation();
@@ -22,11 +23,9 @@ const Layout = () => {
         {!isAdminPage && (
           <header className="sticky top-0 z-40 glass-panel border-b border-cyber-border/60 py-3 px-4 flex justify-between items-center shadow-sm safe-pt">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyber-neonBlue to-cyber-neonPurple flex items-center justify-center font-display font-extrabold text-sm text-white tracking-tighter shadow-md shadow-cyber-neonBlue/20">
-                IN
-              </div>
+              <img src={logo} alt="Innovision Logo" className="w-12 h-12 object-contain mix-blend-multiply" />
               <div>
-                <h1 className="font-display font-bold text-sm tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-cyber-neonBlue to-cyber-neonPurple">
+                <h1 className="font-display font-bold text-sm tracking-wide text-black">
                   INNOVISION '26
                 </h1>
               </div>

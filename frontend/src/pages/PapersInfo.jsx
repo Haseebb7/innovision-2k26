@@ -32,7 +32,7 @@ const PapersInfo = () => {
           <p className="text-xs text-gray-300 leading-relaxed font-light">
             Innovision Paper Presentation invites research-driven minds to present their academic and industrial insights.
           </p>
-          
+
           <div className="bg-white/5 border border-white/10 rounded-xl p-3 flex justify-between items-center">
             <div>
               <p className="text-[10px] text-gray-400 font-mono">PRIZE POOL</p>
@@ -40,7 +40,7 @@ const PapersInfo = () => {
             </div>
             <div className="text-right">
               <p className="text-[10px] text-gray-400 font-mono">REGISTRATION FEE</p>
-              <p className="text-sm font-bold text-cyber-neonBlue">₹250 per Paper</p>
+              <p className="text-sm font-bold text-cyber-neonBlue">₹150 per Paper</p>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const PapersInfo = () => {
           href={GOOGLE_FORMS.PAPERS}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full py-3 rounded-xl bg-gradient-to-r from-cyber-neonPurple to-cyber-neonBlue text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center"
+          className="w-full py-3 rounded-xl bg-cyber-neonBlue text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center"
         >
           <span>Apply Now</span>
           <ChevronRight size={16} />

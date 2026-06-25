@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Trophy, Calendar, MapPin, Cpu, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import innovisionHero from '../assets/innovision_hero.png';
 
 const Home = () => {
   return (
@@ -20,13 +21,11 @@ const Home = () => {
           International Level Symposium
         </span>
 
-        <h1 className="font-display font-black text-4xl leading-tight tracking-tight uppercase">
-          INNO<span className="bg-clip-text text-transparent bg-gradient-to-r from-cyber-neonBlue to-cyber-neonPurple">VISION</span>
-        </h1>
-
-        <p className="text-xs text-gray-300 max-w-xs leading-relaxed">
-          The ultimate arena for innovators, creators, and technologists.
-        </p>
+        <img
+          src={innovisionHero}
+          alt="Innovision 2k26 - Project for People, Planet and Progress"
+          className="w-full max-w-[280px] h-auto object-contain my-2 mix-blend-multiply"
+        />
 
         {/* Date & Location */}
         <div className="grid grid-cols-2 gap-2 w-full pt-2">
@@ -34,7 +33,7 @@ const Home = () => {
             <Calendar className="text-cyber-neonBlue" size={16} />
             <div>
               <p className="text-[10px] text-gray-400 font-mono">DATE</p>
-              <p className="text-xs font-semibold">23rd &amp; 25th July 2026</p>
+              <p className="text-xs font-semibold">23rd &amp; 24th July 2026</p>
             </div>
           </div>
           <div className="flex items-center space-x-2 bg-white/5 border border-white/10 rounded-xl p-3 text-left">
@@ -50,7 +49,7 @@ const Home = () => {
         <div className="flex flex-col space-y-2 w-full pt-2">
           <Link
             to="/projects"
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-cyber-neonBlue to-cyber-neonPurple text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 shadow-lg shadow-cyber-neonBlue/20 hover:brightness-105 active:scale-95 transition-all duration-300"
+            className="w-full py-3 rounded-xl bg-cyber-neonBlue text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 shadow-lg shadow-cyber-neonBlue/20 hover:brightness-105 active:scale-95 transition-all duration-300"
           >
             <span>Project Exhibition Form</span>
             <ArrowRight size={14} />
