@@ -65,7 +65,7 @@ const PapersInfo = () => {
           <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 space-y-3.5">
             <div>
               <p className="text-[10px] text-gray-400 font-mono">PRIZE POOL</p>
-              <p className="text-base font-bold text-cyber-neonPurple">₹5,000</p>
+              <p className="text-base font-bold text-cyber-neonPurple">₹3,000</p>
             </div>
             <div className="border-t border-cyber-border/40 pt-3.5">
               <p className="text-[10px] text-gray-400 font-mono">REGISTRATION FEE</p>
