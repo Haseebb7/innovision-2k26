@@ -45,7 +45,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="space-y-4 py-2">
+    <div className="space-y-4 py-2 max-w-3xl mx-auto w-full">
       {/* Header */}
       <div className="flex items-center space-x-3 py-1">
         <div className="w-10 h-10 rounded-xl bg-purple-500/15 text-cyber-neonPurple flex items-center justify-center shadow-[0_0_15px_rgba(168,85,247,0.1)]">

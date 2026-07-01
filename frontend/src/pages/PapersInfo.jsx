@@ -21,55 +21,68 @@ const PapersInfo = () => {
         key="details-tab"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="space-y-4"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start"
       >
-        {/* Event Info Card */}
-        <div className="glass-panel rounded-2xl p-5 border border-white/5 space-y-3">
-          <h3 className="font-display font-extrabold text-sm text-cyber-neonPurple flex items-center space-x-2">
-            <Info size={16} />
-            <span>Conference Overview</span>
-          </h3>
-          <p className="text-xs text-gray-300 leading-relaxed font-light">
-            Innovision Paper Presentation invites research-driven minds to present their academic and industrial insights.
-          </p>
+        {/* Left Column: Overview & Guidelines */}
+        <div className="md:col-span-2 space-y-4">
+          {/* Event Info Card */}
+          <div className="glass-panel rounded-2xl p-5 border border-white/5 space-y-3">
+            <h3 className="font-display font-extrabold text-sm text-cyber-neonPurple flex items-center space-x-2">
+              <Info size={16} />
+              <span>Conference Overview</span>
+            </h3>
+            <p className="text-xs text-gray-300 leading-relaxed font-light">
+              Innovision Paper Presentation invites research-driven minds to present their academic and industrial insights.
+            </p>
+          </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-xl p-3 flex justify-between items-center">
-            <div>
-              <p className="text-[10px] text-gray-400 font-mono">PRIZE POOL</p>
-              <p className="text-sm font-bold text-cyber-neonPurple">₹5,000</p>
-            </div>
-            <div className="text-right">
-              <p className="text-[10px] text-gray-400 font-mono">REGISTRATION FEE</p>
-              <p className="text-sm font-bold text-cyber-neonBlue">₹150 per Paper</p>
-            </div>
+          {/* Presentation rules */}
+          <div className="glass-panel rounded-2xl p-5 border border-white/5 space-y-3">
+            <h3 className="font-display font-extrabold text-sm text-cyber-neonBlue flex items-center space-x-2">
+              <Info size={16} />
+              <span>Guidelines</span>
+            </h3>
+            <ul className="space-y-2 text-xs text-gray-300 list-none pl-1">
+              <li className="flex items-start space-x-2 font-light">
+                <ChevronRight size={14} className="text-cyber-neonPurple mt-0.5 flex-shrink-0" />
+                <span>The paper must be submitted in standard <strong>IEEE format</strong> in PDF format (Max 10MB).</span>
+              </li>
+              <li className="flex items-start space-x-2 font-light">
+                <ChevronRight size={14} className="text-cyber-neonPurple mt-0.5 flex-shrink-0" />
+                <span>Presentation time: <strong>8 minutes</strong> for presentation and <strong>2 minutes</strong> for Q&amp;A.</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Presentation rules */}
-        <div className="glass-panel rounded-2xl p-5 border border-white/5 space-y-3">
-          <h3 className="font-display font-extrabold text-sm text-gray-200">Guidelines</h3>
-          <ul className="space-y-2 text-xs text-gray-300 list-none pl-1">
-            <li className="flex items-start space-x-2 font-light">
-              <ChevronRight size={14} className="text-cyber-neonPurple mt-0.5 flex-shrink-0" />
-              <span>The paper must be submitted in standard <strong>IEEE format</strong> in PDF format (Max 10MB).</span>
-            </li>
-            <li className="flex items-start space-x-2 font-light">
-              <ChevronRight size={14} className="text-cyber-neonPurple mt-0.5 flex-shrink-0" />
-              <span>Presentation time: <strong>8 minutes</strong> for presentation and <strong>2 minutes</strong> for Q&amp;A.</span>
-            </li>
-          </ul>
-        </div>
+        {/* Right Column: Registration Card & CTA */}
+        <div className="glass-panel rounded-2xl p-5 border border-white/5 space-y-4 md:col-span-1 sticky top-24">
+          <h3 className="font-display font-extrabold text-sm text-cyber-neonPurple flex items-center space-x-2">
+            <Info size={16} />
+            <span>Registration Details</span>
+          </h3>
+          
+          <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 space-y-3.5">
+            <div>
+              <p className="text-[10px] text-gray-400 font-mono">PRIZE POOL</p>
+              <p className="text-base font-bold text-cyber-neonPurple">₹5,000</p>
+            </div>
+            <div className="border-t border-cyber-border/40 pt-3.5">
+              <p className="text-[10px] text-gray-400 font-mono">REGISTRATION FEE</p>
+              <p className="text-base font-bold text-cyber-neonBlue">₹150 per Paper</p>
+            </div>
+          </div>
 
-        {/* Quick CTA to Form */}
-        <a
-          href={GOOGLE_FORMS.PAPERS}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full py-3 rounded-xl bg-cyber-neonBlue text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center"
-        >
-          <span>Apply Now</span>
-          <ChevronRight size={16} />
-        </a>
+          <a
+            href={GOOGLE_FORMS.PAPERS}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 rounded-xl bg-cyber-neonBlue text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all duration-300 text-center shadow-md shadow-cyber-neonBlue/10"
+          >
+            <span>Apply Now</span>
+            <ChevronRight size={16} />
+          </a>
+        </div>
       </motion.div>
     </div>
   );

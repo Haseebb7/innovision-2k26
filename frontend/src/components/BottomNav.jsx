@@ -12,7 +12,7 @@ const BottomNav = () => {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 glass-panel-heavy border-t border-cyber-border rounded-t-2xl safe-pb shadow-[0_-8px_30px_rgba(168,85,247,0.06)]">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 glass-panel-heavy border-t border-cyber-border rounded-t-2xl safe-pb shadow-[0_-8px_30px_rgba(168,85,247,0.06)] md:hidden">
       <div className="flex justify-around items-center h-16 max-w-md mx-auto px-4">
         {navItems.map((item) => {
           const Icon = item.icon;

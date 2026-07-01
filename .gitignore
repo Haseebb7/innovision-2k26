@@ -39,5 +39,4 @@ Thumbs.db
 *.sln
 *.sw?
 
-# Uploads directory inside backend
-backend/uploads/
+
